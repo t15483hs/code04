@@ -3,14 +3,13 @@ function R(a){
     return a*2*b;
 }
 
-function Area(a){
+function CulArea(a){
     return a*a*Math.PI;
 }
 
-function MA (a,b,c){
-    var Pi = 3.14159;
-    var aa = a*a*Pi
-    var ba = b*b*Pi
-    var ca = c*c*Pi
+function CulMaxArea (a,b,c){
+    var aa = CulArea(a);
+    var ba = CulArea(b);
+    var ca = CulArea(c);
     return Math.max(aa,ba,ca)
 }
